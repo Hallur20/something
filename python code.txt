@@ -1,0 +1,33 @@
+#2.11
+number = int(input("please enter a 5 digit number: "))
+
+first = (number//(10000))%10
+second = (number//(1000))%10
+third = (number//(100))%10
+fourth = (number//(10))%10
+fifth = (number//(1))%10
+
+print(str(first)+"   ",end='')
+print(str(second)+"   ",end='')
+print(str(third)+"   ",end='')
+print(str(fourth)+"   ",end='')
+print(str(fifth)+"   ",end='')
+
+#2.12
+p = 1000
+r = 0.07
+n = [10,20,30]
+
+print("\n_____________________\n")
+print("(2.12):\n")
+print("original amount: " + str(p))
+print("annual rate: " + str(round(r*100)) + "%")
+print("number of years array: " + str(n))
+
+a1 = p*(1+r)**n[0]
+a2 = p*(1+r)**n[1]
+a3 = p*(1+r)**n[2]
+
+print("10 years:"+str(a1))
+print("20 years:"+str(a2))
+print("30 years:"+str(a3))
